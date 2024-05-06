@@ -75,7 +75,6 @@
         "horde/activesync": "^3 || dev-FRAMEWORK_6_0",
         "horde/backup": "^2 || dev-FRAMEWORK_6_0",
         "horde/db": "^3 || dev-FRAMEWORK_6_0",
-        "horde/openxchange": "^2 || dev-FRAMEWORK_6_0",
         "horde/test": "^3 || dev-FRAMEWORK_6_0",
         "pear/date_holidays": "*"
     },
@@ -98,6 +97,9 @@
         }
     },
     "autoload-dev": {
+        "psr-0": {
+            "Kronolith": "test/"
+        },
         "psr-4": {
             "Horde\\Kronolith\\Test\\": "test/"
         }

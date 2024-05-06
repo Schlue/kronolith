@@ -31,7 +31,7 @@ class Kronolith_Integration_Kronolith_Sql_Pdo_SqliteTest extends Kronolith_Integ
 {
     protected $backupGlobals = false;
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         self::$callback = array(__CLASS__, 'getDb');
         parent::setUpBeforeClass();

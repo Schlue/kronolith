@@ -25,7 +25,7 @@
  */
 class Kronolith_Integration_ToIcalendarTest extends Kronolith_TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $GLOBALS['registry'] = new Kronolith_Stub_Registry('test', 'kronolith');
         $GLOBALS['injector'] = new Horde_Injector(new Horde_Injector_TopLevel());
@@ -37,7 +37,7 @@ class Kronolith_Integration_ToIcalendarTest extends Kronolith_TestCase
         $GLOBALS['conf']['calendar']['driver'] = 'Mock';
     }
 
-    public function tearDown()
+    public function tearDown(): void
     {
         unset($GLOBALS['registry']);
         unset($GLOBALS['injector']);

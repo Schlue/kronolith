@@ -27,8 +27,12 @@
  * @link       http://www.horde.org/apps/kronolith
  * @license    http://www.horde.org/licenses/gpl GNU General Public License, version 2
  */
+
+// use the following namespace
+use PHPUnit\Framework\TestCase;
+
 class Kronolith_TestCase
-extends PHPUnit_Framework_TestCase
+extends TestCase
 {
     protected function getInjector()
     {

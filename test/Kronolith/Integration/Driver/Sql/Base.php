@@ -31,7 +31,7 @@ class Kronolith_Integration_Driver_Sql_Base extends Kronolith_Integration_Driver
 {
     static $callback;
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         parent::setUpBeforeClass();
         self::getDb();

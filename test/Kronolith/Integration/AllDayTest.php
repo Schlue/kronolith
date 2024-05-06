@@ -29,7 +29,7 @@
  */
 class Kronolith_Integration_AllDayTest extends Kronolith_TestCase
 {
-    public static function setupBeforeClass()
+    public static function setupBeforeClass(): void 
     {
         $GLOBALS['calendar_manager'] = new Kronolith_Stub_CalendarManager();
     }
